@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router , NavLink, Routes , Route } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
-import Careers from './careers'
+import Careers from './Careers'
 import Login from './Login'
 import Contact from './Contact'
 
