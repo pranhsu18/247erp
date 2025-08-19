@@ -1,21 +1,21 @@
 .home_page{
     margin: 20px 30px;
     padding: 20px;
-    color: #333;
+    color: #000000;
     display: flex;
     flex-direction: column;
 }
 
 .main_heading{
     
-    font-size: 48px; /* adjust as needed */
+    font-size: 48px; 
     font-weight: bold;
     background: linear-gradient(90deg, #cf3166fb, #a700ff); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #0c0c0c;
 
 }
 .solution_box{
@@ -33,7 +33,7 @@
     width: auto;
 
 }
-ul{
+.home_content{
     list-style: none;
     font-size: 1.1rem;
     :hover{
@@ -45,11 +45,10 @@ ul{
 
 
 }
-li{
+.home_content li{
     
-    color: green;
-
-    
+    color: rgb(39, 38, 39);
+    width: 250px;
 }
 .image_div{
     
