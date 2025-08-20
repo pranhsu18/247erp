@@ -28,16 +28,21 @@ const people = [
   },
 ];
 
+
 const About = () => {
   return (
-    <div className="about-container">
-      {/* Header */}
-      <header className="about-header">
-        <h1>About Us</h1>
-      </header>
+    <div className="about_container">
 
+      
+        <div className='heading'>
+          <h1 className='main_heading'>About Us</h1>
+        </div>
+      
+      
       {/* Mission & Vision */}
-      <section className="about-section">
+      <section className="about_section">
+        <h2>Global Enterprise Solutions </h2>
+          <p>Global Enterprise Solutions. provides ERP solutions for media companies around the world.Currently we have customers in the United States, Ireland and Australia. Our services include eCommerce, ERP, CRM, CMS, CDNs, analytics (including AI), etc.</p>
         <h3>Our Mission</h3>
         <p>
           Expand our newspaper circulations. Our deepest purpose as an
@@ -50,24 +55,26 @@ const About = () => {
           Our vision is to be the earth's most valuable newspaper company, where
           people can find the latest news, classifieds, and events.
         </p>
+
+        <h2 className='meetourteam' >Our Team</h2>
       </section>
 
       {/* Team Profiles (small cards) */}
-      <div className="profile-list">
+      <div className="profile_list">
         {people.map((person) => (
-          <div key={person.id} className="profile-card">
-            <img src={person.image} alt={person.name} className="profile-img" />
+          <div key={person.id} className="profile_card">
+            <img src={person.image} alt={person.name} className="profile_img" />
             <h4>{person.name}</h4>
-            <p className="profile-title">{person.title}</p>
+            <p className="profile_title">{person.title}</p>
           </div>
         ))}
       </div>
 
       {/* Detailed Cards */}
-      <div className="details-list">
+      <div className="details_list">
         {people.map((person) => (
-          <div key={person.id} className="details-card">
-            <img src={person.image} alt={person.name} className="details-img" />
+          <div key={person.id} className="details_card">
+            <img src={person.image} alt={person.name} className="details_img" />
             <h3>{person.name}</h3>
             <p className="title">{person.title}</p>
             <p className="description">{person.description}</p>

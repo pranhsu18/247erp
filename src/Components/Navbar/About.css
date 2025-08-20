@@ -1,49 +1,64 @@
-.about-container {
-    margin: 20px 20px;
-  background-color: white;
-  color: #000000;
-  padding: 20px; 
+.about_container {
+    margin: 20px 30px;
+    padding: 20px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
   
 }
-.about-header {
-  font-size: 25px; /* match Solutions */
-  font-weight: bold;
-  background: linear-gradient(90deg, #cf3166fb, #a700ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  border-bottom: 1px solid #0c0c0c;
-  /* text-align: left; keep aligned same as Solutions */
+.main_heading{
+    
+    font-size: 48px; 
+    font-weight: bold;
+    background: linear-gradient(90deg, #cf3166fb, #a700ff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    border-bottom: 1px solid #0c0c0c;
+
 }
 
 
-.about-header h2 {
+.about_header h2 {
   margin: 0;
   font-size: 22px;
   font-weight: bold;
-  color: #000;
+  color: #2b2b2b;;
 }
 
-.about-section {
-  color: #000;
+.about_section {
+  color: #2b2b2b;;
   margin: 20px auto;
   max-width: 800px;
 }
+.about_section h2{
+  margin: 10px 0 20px 0;
+}
 
-.about-section h3 {
+.about_section h3 {
   font-size: 20px;
   margin: 10px 0;
 }
 
-.about-section p {
+.about_section p {
   font-size: 16px;
   font-weight: 300;
   text-align: left;
   line-height: 1.5;
 }
 
-.profile-list {
+.meetourteam {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 2;
+  border-bottom: 1.5px solid black;
+  
+}
+
+
+.profile_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -51,31 +66,31 @@
   gap: 1.5rem;
 }
 
-.profile-card {
+.profile_card {
   margin: 10px;
   text-align: center;
 }
 
-.profile-img {
+.profile_img {
   width: 200px;
   height: 200px;
   border: 0.1px solid rgb(204, 203, 203);
   border-radius: 5px ;
 }
 
-.profile-title {
+.profile_title {
   font-size: 14px;
   font-weight: 300;
 }
 
-.details-list {
+.details_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.details-card {
+.details_card {
   background: white;
   color: black;
   width: 300px;
@@ -85,20 +100,20 @@
   text-align: center;
 }
 
-.details-img {
+.details_img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 3px solid #007bff;
 }
 
-.details-card .title {
+.details_card .title {
   color: #007bff;
   font-weight: 600;
   margin: 10px 0;
 }
 
-.details-card .description {
+.details_card .description {
   font-size: 14px;
   color: #555;
 }

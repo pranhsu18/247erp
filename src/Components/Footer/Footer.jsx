@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Company Info */}
         <div className="footer-section">
           <img
-            src="/logo.png"
+            src="https://247erp.net/files/ges_logo.jpg"
             alt="Global Enterprise Solutions"
             className="footer-logo"
           />
