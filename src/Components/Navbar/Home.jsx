@@ -1,81 +1,90 @@
-import React from 'react'
+
+import React from "react";
 import "./Home.css";
-import Contact from './Contact';
 
-
-export default function Home() {
-
+export default function Contact() {
   return (
-    
-    <div className='home_page' >
-     
-      
-      <div className='Heading'>
-        <h1 className='main_heading'>Solutions</h1>
-      </div>
-  
+    <div className="home_page">
 
 
-      <div className='mainbox'>
-
-        <div className='box1'>
-        
-        <img src="https://247erp.net/assets/247erp/img/img2.jpg" alt="Grow Your Business Now" />
-        <br />
-        <p>At 247erp.net, we empower businesses with innovative ERP and media solutions designed to drive growth, efficiency, and long-term success. With decades of proven expertise since 1995, our mission is to simplify processes, enhance productivity, and help organizations achieve their goals faster in today’s competitive digital era.</p>
+      <div className="hero-section">
+        <div className="hero-text">
+          <h1>Global Enterprise Solutions</h1>
+          <p>
+            Global Enterprise Solutions provides end-to-end technology and business solutions that empower organizations to grow and succeed. Our services include ERP implementations and support, software development outsourcing, multimedia design, web development, hosting, and AI-driven analytics. With expertise in content development, video editing, and teleservices, we deliver innovative, reliable, and impactful results to clients across the United States, Ireland, and Australia.
+          </p>
         </div>
 
-      <div className='box2'>
-        <img className='box2_img' src="https://247erp.net/assets/247erp/img/img6.jpg" alt="ERP Solutions" />
-        <div className='innerbox2'>
-          <h2 >Software Project Management</h2>
-          <div className='inner_headings' >
-            <h4  > <a className='inner_subheadings' href="">Digital Solutions, Web and Print Solutions</a> </h4>
-            <div  className='innerbox2div'> <img className="imageofericsir" src="https://247erp.net/files/eric.jpeg" alt="Eric Sir Image" /> <span>Admin</span>
-            </div>
-            <br />
-            <h4  > <a className='inner_subheadings' href="">ERP Implementation and Support</a> </h4>
-            <div  className='innerbox2div'> <img className="imageofericsir" src="https://247erp.net/files/eric.jpeg" alt="Eric Sir Image" /> <span>Admin</span>
-            </div>
-          </div>
+        <div className="hero-video">
+          <video
+            src="src/assets/Global Enterprise Solutions New (1).mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
         </div>
       </div>
 
-      <div className='box3'>
-        <img className='box3_img' src="https://247erp.net/assets/247erp/img/Img4.jpg" alt="ERP Solutions" />
-        <div className='innerbox2'>
-          <h2 >Compelete Software and ERP Solutions </h2>
-          <div className='inner_headings' >
-            <h4  > <a className='inner_subheadings' href="">Media Content Development, Multimedia, Image Processing, etc.</a> </h4>
-            <div  className='innerbox2div'> <img className="imageofericsir" src="https://247erp.net/files/eric.jpeg" alt="Eric Sir Image" /> <span>Admin</span>
-            </div>
-            <br />
-            <h4  > <a className='inner_subheadings' href="">Server & Desktop Support, Video Editing, Teleservices, etc.</a> </h4>
-            <div  className='innerbox2div'> <img className="imageofericsir" src="https://247erp.net/files/eric.jpeg" alt="Eric Sir Image" /> <span>Admin</span>
-            </div>
-          </div>
+      <div className="HeadingPartOfHome">
+        <h2 className="headings" >Our Solutions</h2>
+      </div>
+
+
+{/* wrote about to make sometings in iddle here 
+ */}
+
+      <div className="frontdiv">
+        <div className="imagesection">
+          <img src="src\assets\Image1.png" alt="erp solutions" />
+        </div>
+
+        <div className="headingtextSection">
+          <h2 className="animated-heading">ERP Implementation & Support</h2>
+          <p>
+            We deliver end-to-end ERP solutions that streamline processes, integrate workflows, and improve decision-making. From setup and customization to ongoing support, our ERP expertise ensures your business runs efficiently, with reduced downtime and greater productivity. Our tailored ERP solutions adapt to your industry needs and scale as your business grows.
+          </p>
         </div>
       </div>
 
-      <div className='box4'>
-        <img className='box4_img' src="https://247erp.net/assets/247erp/img/Img4.jpg" alt="ERP Solutions" />
-        <div className='innerbox2'>
-          <h2 >Compelete Software and ERP Solutions </h2>
-          <div className='inner_headings' >
-            <h4  > <a className='inner_subheadings' href="">Media Content Development, Multimedia, Image Processing, etc.</a> </h4>
-            <div  className='innerbox2div'> <img className="imageofericsir" src="https://247erp.net/files/eric.jpeg" alt="Eric Sir Image" /> <span>Admin</span>
-            </div>
-            <br />
-            <h4  > <a className='inner_subheadings' href="">Server & Desktop Support, Video Editing, Teleservices, etc.</a> </h4>
-            <div  className='innerbox2div'> <img className="imageofericsir" src="https://247erp.net/files/eric.jpeg" alt="Eric Sir Image" /> <span>Admin</span>
-            </div>
-          </div>
+      <div className="frontdiv1">
+        <div className="imagesection">
+          <img src="src\assets\Image2.png" alt="erp solutions" />
+        </div>
+
+        <div className="headingtextSection">
+          <h2 className="animated-heading">Digital & Multimedia Solutions</h2>
+          <p>
+            We create engaging multimedia and digital content for businesses and media companies. From print-ready designs to interactive digital experiences, our team brings creativity and innovation together. Services include image processing, video editing, and content development that elevate your brand presence across all platforms—ensuring consistency, impact, and audience engagement.
+          </p>
+        </div>
+      </div>
+
+      <div className="frontdiv">
+        <div className="imagesection">
+          <img src="src/assets/ERP IMAGE1.png" alt="erp solutions" />
+        </div>
+
+        <div className="headingtextSection">
+          <h2 className="animated-heading">Software Development & Project Management</h2>
+          <p>
+            Our experts design, develop, and manage customized software solutions tailored to your business requirements. Using proven project management frameworks, we deliver on time, within budget, and with unmatched quality. Whether it’s a new build or scaling an existing system, we ensure seamless functionality that drives your business goals forward.
+          </p>
+        </div>
+      </div>
+
+      <div className="frontdiv1">
+        <div className="imagesection">
+          <img src="src/assets/ERP IMAGE1.png" alt="erp solutions" />
+        </div>
+
+        <div className="headingtextSection">
+          <h2 className="animated-heading">Web Design & Hosting</h2>
+          <p>
+            We specialize in stunning, user-friendly websites backed by secure and reliable hosting solutions. From sleek designs to seamless navigation, we craft digital experiences that connect with your audience. With optimized performance, mobile responsiveness, and strong hosting infrastructure, your website remains fast, secure, and always online—ready to impress your visitors.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-
-      
-  
-  )
+  );
 }

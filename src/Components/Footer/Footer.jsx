@@ -13,6 +13,8 @@ export default function Footer() {
             alt="Global Enterprise Solutions"
             className="footer-logo"
           />
+          <p className="company_description">We deliver innovative ERP and media solutions in today’s competitive digital era.</p>
+          <br />
           <p>United States: 112 Bowery, New York, NY 10013</p>
           <p className="footer-contact">
             <FaPhoneAlt /> +1 (646) 389-6722

@@ -34,7 +34,7 @@ export default function Navbar() {
       </div>
       <ul className={ismenuopen ? 'navbar_links active' : 'navbar_links' }>
         <input type='text' placeholder='Search...' value={searchedtext} onChange={(e)=>{setSearchedtext(e.target.value)}}/>
-        <li> <NavLink to ='/'       onClick={toggleMenu}> Solutions </NavLink> </li>
+        <li> <NavLink to ='/'       onClick={toggleMenu}> Home </NavLink> </li>
         {/* <li> <NavLink to='/Careers' onClick={toggleMenu}> <a href="https://gns.tv/jobs">Careers</a> </NavLink> </li> */}
         <li> <NavLink to= '/About'  onClick={toggleMenu}> About Us</NavLink> </li>
         <li>  <a href="https://gns.tv/jobs">Careers</a> </li>

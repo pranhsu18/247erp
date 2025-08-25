@@ -12,7 +12,9 @@
 }
 
 .footer-container {
+  
   display: grid;
+  align-items:flex-start;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
   max-width: 1200px;
@@ -28,6 +30,11 @@
 .footer-section p {
   font-size: 14px;
   line-height: 1.6;
+}
+.company_description{
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+
 }
 
 .footer-section ul {
