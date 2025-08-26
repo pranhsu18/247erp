@@ -1,6 +1,4 @@
-
 .home_page {
-  color: #000000;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -9,43 +7,73 @@
   height: auto;
   overflow-x: hidden;
   background: linear-gradient(135deg, #bbbbbbfb, #f3f3f3, #ffffff);
+  
 }
 
 
 .hero-section {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
   background: linear-gradient(135deg, #cf3166fb, #a700ff, #180082);
-  padding: 2rem;
-  gap: 2rem;
+  padding: 3rem 6rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
+ 
 }
 
-
 .hero-text {
+  margin-top: 2rem ;
   flex: 1;
   max-width: 500px;
   color: white;
+  
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 1rem;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  padding-left: 5px;
+  animation: typing 3.5s steps(60, end) forwards , blink 0.7s infinite   , zoomInOut 7s ease-in-out infinite;;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 24ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);   /* Normal size */
+  }
+  50% {
+    transform: scale(1.05); /* Zoomed in */
+  }
 }
 
 .hero-text p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height:1.6rem;
   color: #ffffff;
 }
 
 .hero-video {
   flex: 1;
-  max-width: 600px;
+  max-width: 580px;
 }
 
 .hero-video video {
@@ -55,14 +83,7 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
   object-fit: cover;
 }
-
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
-  animation: zoomEffect 4s ease-in-out infinite alternate;
-}
+ 
 
 
 .frontdiv {
@@ -113,12 +134,13 @@
   box-shadow: 4px 9px 15px rgba(255, 0, 179, 0.7);
 }
 
-/* Text Section with Animated Heading */
+
 .headingtextSection {
   max-width: 500px;
 }
 
 .animated-heading {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   background: linear-gradient(90deg, #0206ff, #8400ff, #fc00ef, #ff0062);
@@ -126,7 +148,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation:fireShimmer 2s linear infinite;
+  animation: fireShimmer 1s linear infinite;
   margin-bottom: 1rem;
 }
 
@@ -134,15 +156,18 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
 
 .headingtextSection p {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 500;
@@ -150,10 +175,17 @@
   text-align: justify;
 }
 
-
-
+.solutionsection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  padding: 1rem 3rem;
+}
 .headings {
-  font-size: 48px;
+  
+  font-size: 54px;
   font-weight: bold;
   background: linear-gradient(90deg, #cf3166fb, #a700ff);
   -webkit-background-clip: text;
@@ -161,6 +193,105 @@
   background-clip: text;
   border-bottom: 1px solid #000000;
   text-align: left;
-  padding-left: 1vmax;
+  padding-left: 2vmax;
   margin: 2vmax;
-} 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+/* ✅ Base Styles (already in your code, keep them) */
+/* I’ll only add responsive rules below */
+
+@media (max-width: 1024px) {
+
+  .hero-section {
+    padding: 2rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero-text {
+    max-width: 90%;
+    margin-top: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    white-space: normal; 
+    width: auto;
+    animation: none; 
+  }
+
+  .hero-video {
+    max-width: 90%;
+    margin-top: 2rem;
+  }
+
+  .frontdiv, .frontdiv1 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .imagesection {
+    width: 90%;
+    height: auto;
+  }
+
+  .headingtextSection {
+    max-width: 90%;
+  }
+
+  .animated-heading {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .headings {
+    font-size: 36px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .hero-section {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .hero-video {
+    max-width: 100%;
+  }
+
+  .imagesection {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .animated-heading {
+    font-size: 1.4rem;
+  }
+
+  .headings {
+    font-size: 28px;
+    margin: 1rem 0;
+  }
+
+  .headingtextSection p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}

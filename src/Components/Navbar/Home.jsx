@@ -1,12 +1,11 @@
 
 import React from "react";
 import "./Home.css";
+import About from "./About";
 
-export default function Contact() {
+export default function Home() {
   return (
     <div className="home_page">
-
-
       <div className="hero-section">
         <div className="hero-text">
           <h1>Global Enterprise Solutions</h1>
@@ -29,12 +28,10 @@ export default function Contact() {
       <div className="HeadingPartOfHome">
         <h2 className="headings" >Our Solutions</h2>
       </div>
+      
+      <div className="solutionsection">
 
-
-{/* wrote about to make sometings in iddle here 
- */}
-
-      <div className="frontdiv">
+        <div className="frontdiv">
         <div className="imagesection">
           <img src="src\assets\Image1.png" alt="erp solutions" />
         </div>
@@ -85,6 +82,38 @@ export default function Contact() {
           </p>
         </div>
       </div>
+
+      <div className="frontdiv">
+        <div className="imagesection">
+          <img src="src/assets/ERP IMAGE1.png" alt="erp solutions" />
+        </div>
+        <div className="headingtextSection">
+          <h2 className="animated-heading">Server & Desktop Support</h2>
+          <p>
+            Our comprehensive IT infrastructure support keeps your systems running smoothly, every day. From server monitoring and desktop troubleshooting to regular maintenance and upgrades, we handle it all. With proactive solutions and expert technical assistance, we minimize downtime and maximize reliability—giving your team the confidence to work without interruptions.
+          </p>
+        </div>
+      </div>
+      <div className="frontdiv1">
+        <div className="imagesection">
+          <img src="src/assets/ERP IMAGE1.png" alt="erp solutions" />
+        </div>
+        <div className="headingtextSection">
+          <h2 className="animated-heading">Teleservices & Customer Support</h2>
+          <p>
+            We provide end-to-end outsourcing solutions that enhance customer satisfaction and business efficiency. From teleservices and call handling to complete customer support management, our services ensure timely responses and personalized care. With our trained professionals and advanced systems, you can deliver world-class customer experiences while focusing on your core business priorities.
+          </p>
+        </div>
+      </div>
+
+
+      </div>
+      <About />
+
+
+
+
+      
     </div>
   );
 }
